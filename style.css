@@ -10,17 +10,7 @@ body {
 }
 
 /* Шапка */
-header {
-    height: 90px;
-    background: #292929;
-    color: white;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    position: relative;
-}
 
 header h1 {
     font-size: 25px;
@@ -166,8 +156,3 @@ button {
     cursor: pointer;
 }
 
-button.login {
-    background: white;
-    color: #222;
-    border: 2px solid #e0e0e0;
-}
