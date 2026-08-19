@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e7d2eb;
+}
+
+/* Шапка */
+header {
+    height: 90px;
+    background: #292929;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+header h1 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.menu {
+    position: absolute;
+    left: 32px;
+    top: 32px;
+
+    width: 27px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.menu span {
+    width: 27px;
+    height: 2px;
+    background: white;
+}
+
+/* Основная область */
+main {
+    min-height: 800px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: white;
+
+    width: 890px;
+    min-height: 560px;
+
+    padding: 43px 92px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 123px);
+    gap: 35px 20px;
+}
+
+/* Фиолетовые блоки */
+.box {
+    width: 123px;
+    height: 123px;
+
+    background: #8d5bb0;
+    border: 1px solid #555;
+    border-radius: 5px;
+
+    position: relative;
+    padding: 3px;
+}
+
+/* Оранжевые квадраты */
+.items {
+    display: flex;
+    gap: 4px;
+}
+
+.items div {
+    width: 26px;
+    height: 27px;
+
+    background: #f3a13a;
+    border: 1px solid #8b642d;
+    border-radius: 4px;
+}
+
+/* Сверху */
+.top {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Вертикально */
+.column {
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* Слева */
+.left {
+    position: absolute;
+    left: 3px;
+    top: 34px;
+}
+
+/* По краям */
+.space {
+    justify-content: space-between;
+}
+
+/* Справа */
+.right {
+    justify-content: flex-end;
+}
+
+/* Снизу */
+.bottom {
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+}
+
+/* По центру */
+.center {
+    position: absolute;
+    top: 48px;
+    left: 3px;
+}
+
+/* Кнопки */
+.buttons {
+    width: 100%;
+    background: white;
+
+    padding: 35px 60px 45px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    border-radius: 35px 35px 0 0;
+}
+
+button {
+    width: 100%;
+    height: 60px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #438eea;
+    color: white;
+
+    font-size: 22px;
+    cursor: pointer;
+}
+
+button.login {
+    background: white;
+    color: #222;
+    border: 2px solid #e0e0e0;
+}
